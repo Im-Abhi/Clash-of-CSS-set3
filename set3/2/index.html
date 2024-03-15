@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Clash Of CSS</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100dvh;
+            min-height: 100vh;
+            background: #0b2429;
+            position: relative;
+        }
+
+        .leaf {
+            width: 12rem;
+            height: 12rem;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: absolute;
+        }
+
+        .leaf__backLayer {
+            z-index: 0;
+            background: #1a4341;
+            transform: translateX(-50%);
+        }
+
+        .leaf__middleLayer {
+            background: #998235;
+            z-index: 1;
+        }
+
+        .leaf__topLayer {
+            background: #f3ac3c;
+            z-index: 2;
+            transform: translateX(50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="leaf leaf__backLayer"></div>
+    <div class="leaf leaf__middleLayer"></div>
+    <div class="leaf leaf__topLayer"></div>
+</body>
+
+</html>
