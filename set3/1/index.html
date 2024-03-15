@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<style>
-    body {
+    <title>Clash Of CSS</title>
+    <style>
+      body {
         margin: 0;
         padding: 0;
         background: #f5d6b4;
-    }
+      }
 
-    h1 {
-        font-family: 'Heebo', Arial;
+      h1 {
+        font-family: "Heebo", Arial;
         opacity: 1;
         position: absolute;
         display: inline;
@@ -24,9 +23,9 @@
         transform: translateX(-50%);
         z-index: 10;
         color: #9e936a;
-    }
+      }
 
-    .container {
+      .container {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -36,41 +35,41 @@
         align-items: center;
         justify-content: center;
         transition: 1s;
-    }
+      }
 
-    .head {
+      .head {
         height: 100px;
         width: 100px;
         background-color: #d86f45;
         display: flex;
         position: relative;
         border-radius: 50%;
-    }
+      }
 
-    .main {
+      .main {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+      }
 
-    .shoulders {
+      .shoulders {
         z-index: 10;
         height: 30px;
         width: 100px;
         background-color: #d86f45;
         border-radius: 25px 25px 75px 75px;
         margin-block: 6px;
-    }
+      }
 
-    .torso {
+      .torso {
         width: 130px;
         height: 140px;
         background-color: #d86f45;
         position: relative;
-    }
+      }
 
-    .torso::before {
-        content: '';
+      .torso::before {
+        content: "";
         position: absolute;
         top: -75%;
         left: 70%;
@@ -79,10 +78,10 @@
         width: 300px;
         border-radius: 50%;
         background-color: #f5d6b4;
-    }
+      }
 
-    .torso::after {
-        content: '';
+      .torso::after {
+        content: "";
         position: absolute;
         top: -75%;
         right: 70%;
@@ -91,27 +90,26 @@
         width: 300px;
         border-radius: 50%;
         background-color: #f5d6b4;
-    }
+      }
 
-    .legs {
+      .legs {
         background-color: #d86f45;
         width: 180px;
         height: 55px;
         border-radius: 25px 25px 15px 15px;
         position: relative;
         margin-top: 8px;
-    }
-</style>
-
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <div class="head"></div>
-        <div class="main">
-            <div class="shoulders"></div>
-            <div class="torso"></div>
-            <div class="legs"></div>
-        </div>
+      <div class="head"></div>
+      <div class="main">
+        <div class="shoulders"></div>
+        <div class="torso"></div>
+        <div class="legs"></div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
